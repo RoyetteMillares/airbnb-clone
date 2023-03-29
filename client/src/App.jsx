@@ -21,7 +21,7 @@ const App = () => {
          </svg>
          <span className="font-bold text-xl">airbnb</span>
        </a>
-       <div className='flex items-center px-4 py-2 border-gray-300 rounded-md'>
+       <div className='flex items-center px-4 py-2 border border-gray-300 rounded-md'>
          <div>Anywhere</div>
          <div>Any week</div>
          <div>Add guests</div>
