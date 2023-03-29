@@ -27,7 +27,7 @@ const App = () => {
          <div>Any week</div>
          <div className="h-5 border-l border-gray-300"></div>
          <div>Add guests</div>
-         <button className='bg-primary rounded-full h-10 w-10 flex justify-center items-center'>
+         <button className='bg-primary text-white rounded-full h-8 w-8 flex justify-center items-center'>
            <svg
              xmlns="http://www.w3.org/2000/svg"
              fill="none"
