@@ -21,11 +21,13 @@ const App = () => {
          </svg>
          <span className="font-bold text-xl">airbnb</span>
        </a>
-       <div className='flex items-center px-4 py-2 border border-gray-300 rounded-full'>
+       <div className="flex gap-2 items-center px-4 py-2 border border-gray-300 rounded-full shadow-sm shadow-gray-300">
          <div>Anywhere</div>
+         <div className="h-5 border-l border-gray-300"></div>
          <div>Any week</div>
+         <div className="h-5 border-l border-gray-300"></div>
          <div>Add guests</div>
-         <button>
+         <button className='bg-primary rounded-full h-10 w-10 flex justify-center items-center'>
            <svg
              xmlns="http://www.w3.org/2000/svg"
              fill="none"
