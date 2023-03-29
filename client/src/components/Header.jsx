@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Header = () => {
   return (
-    <header className="p-4 flex items-center justify-between">
+    <header className="flex items-center justify-between">
       <a href="" className="flex items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
