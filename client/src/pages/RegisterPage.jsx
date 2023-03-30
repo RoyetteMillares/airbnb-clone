@@ -8,7 +8,7 @@ const RegisterPage = () => {
     
     const HandleSubmit = (e) => {
         e.preventDefault();
-        axios.get('http://localhost:4000/test')
+        axios.get('/test')
     }
   return (
     <React.Fragment>

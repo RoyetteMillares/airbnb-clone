@@ -3,6 +3,10 @@ import IndexPage from "./pages/IndexPage";
 import LoginPage from "./pages/LoginPage";
 import { Routes, Route } from "react-router-dom";
 import RegisterPage from "./pages/RegisterPage";
+import axios from "axios";
+
+axios.defaults.baseURL = "http://localhost:4000";
+
 const App = () => {
   return (
     <Routes>

@@ -10,14 +10,11 @@ app.use(
   })
 );
 
-  
-app.get("/test", function (req, res) {
-    res.json('test royette')
-});
 
+app.get("/test", (req, res) => {
+    res.json('test royette');
+});
 
 
 // start the server
-app.listen(4000, () => {
-  console.log('Server is running on port 4000');
-});
+app.listen(4000)
