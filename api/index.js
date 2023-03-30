@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
+require('dotenv').config()
 const app = express();
 
 app.use(express.json())
@@ -12,7 +13,7 @@ app.use(
 );
 
 
-mongoose
+mongoose.connect(process.env.MONGODB_URL);
 
 app.get("/test", (req, res) => {
     res.json('test royette');
