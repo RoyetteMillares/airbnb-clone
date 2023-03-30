@@ -6,17 +6,21 @@ const RegisterPage = () => {
   const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     
-    const HandleSubmit = (e) => {
+    const registerUser = (e) => {
         e.preventDefault();
-        axios.get('/test')
+        axios.post('/register', {
+            name,
+            email,
+            password,
+        })
     }
   return (
     <React.Fragment>
       <div className="mb-64 grow flex items-center justify-center flex-col">
         <h1 className="font-bold text-center mb-3 text-2xl">Register</h1>
-        <form onSubmit={HandleSubmit}>
+        <form onSubmit={registerUser}>
           <input
-            type="text" 
+            type="text"
             name="name"
             id="name"
             placeholder="John Doe"
