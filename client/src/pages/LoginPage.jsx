@@ -2,9 +2,9 @@ import React from "react";
 
 const LoginPage = () => {
   return (
-    <div>
+    <React.Fragment>
       <h1>login</h1>
-    </div>
+    </React.Fragment>
   );
 };
 
