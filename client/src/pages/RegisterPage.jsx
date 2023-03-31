@@ -6,14 +6,18 @@ const RegisterPage = () => {
   const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     
-    const registerUser = (e) => {
-        e.preventDefault();
-        axios.post('/register', {
-            name,
-            email,
-            password,
-        })
-      alert("Registration Complete!")
+    const registerUser = async (e) => {
+      e.preventDefault();
+      try {
+        await axios.post("/register", {
+          name,
+          email,
+          password,
+        });
+        alert("Registration Complete!");
+      } catch (error) {
+         alert("Registration Failed")
+      }        
     }
   return (
     <React.Fragment>
