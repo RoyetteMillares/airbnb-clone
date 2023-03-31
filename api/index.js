@@ -5,6 +5,7 @@ const bcrypt = require("bcryptjs")
 const User = require("./models/Users.js")
 
 require('dotenv').config()
+
 const app = express();
 
 const bcryptSalt = bcrypt.genSaltSync(10);
@@ -45,7 +46,12 @@ app.post("/login", async (req, res) => {
   try {
     const user = await User.findOne({ email })
     if (user) {
-      res.json('found');
+      const passwordSame = bcrypt.compareSync(password, user.password)
+      if (passwordSame) {
+        res.json('Password is the Same')
+      } else {
+         res.status(422).json("Password Not the same");
+      }
     }
     else {
        res.json("Not found");
