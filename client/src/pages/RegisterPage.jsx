@@ -13,6 +13,7 @@ const RegisterPage = () => {
             email,
             password,
         })
+      alert("Registration Complete!")
     }
   return (
     <React.Fragment>
